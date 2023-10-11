@@ -7,6 +7,8 @@
     width: 100%;      /* 너비 100% */
     top: 0;           /* 위쪽에 고정 */
     right: 0;
+    z-index: 10;
+    box-shadow: 4px 4px 4px 4px #171717;
 }
 
 .nav-menu ul {
@@ -23,8 +25,12 @@
 .nav-menu a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 30px;
+}
+
+.nav-menu a.active {
+    font-weight: 800;
 }
 
 .nav-menu a:hover {
@@ -45,13 +51,11 @@ li {
     list-style: none;
 }
 .kind_wrap {
-    /* border:2px solid black;  */
     width:100%; 
     max-width:800;
     margin: 0 auto;
     margin-top: 60px; 
     position: relative;
-    box-shadow: 4px 4px 4px 4px #3a3a3a;
 }
 .kind_wrap > .kind_slider {
     overflow: hidden;
@@ -94,6 +98,10 @@ li {
     margin-top: 100px;  /* 네비게이션 메뉴 바의 높이만큼 여백을 추가하여 겹치지 않게 함 */
 }
 
-.home-ad1 {
-
+.home-ad {
+    border: solid 3px black;
+    width: 80vw;
+    height: 40vh;
+    margin-left: 5vw;
+    margin-bottom: 4vh;
 }
