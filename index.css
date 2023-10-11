@@ -72,7 +72,7 @@ li {
   .kind_wrap .arrow > a.prev {
     position: absolute; 
     left:35px; 
-    top:300px;
+    top:150px;
     font-weight: 900;
     font-size: 40px;
     text-decoration: none;
@@ -81,7 +81,7 @@ li {
 .kind_wrap .arrow > a.next {
     position: absolute; 
     right:35px; 
-    top:300px;
+    top:150px;
     font-weight: 900;
     font-size: 40px;
     text-decoration: none;
