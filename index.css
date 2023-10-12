@@ -1,14 +1,23 @@
 /* 네비게이션 메뉴바 */
 
 .nav-menu {
-    background-color: #333;
+    background-color: #1a1a1a;
     text-align: center;
     position: fixed;  /* 화면 상단에 고정 */
     width: 100%;      /* 너비 100% */
+    height: 8vh;
+    line-height : 6vh;
     top: 0;           /* 위쪽에 고정 */
     right: 0;
     z-index: 10;
-    box-shadow: 4px 4px 4px 4px #171717;
+    transition-property: box-shadow, background-color;
+    transition-duration: 0.5s;
+    transition-delay: ease-out;
+}
+
+.nav-menu:hover {
+    background-color: #26262b;
+    box-shadow: 4px 4px 4px 4px #1a1a1a;
 }
 
 .nav-menu ul {
@@ -54,7 +63,7 @@ li {
     width:100%; 
     max-width:800;
     margin: 0 auto;
-    margin-top: 60px; 
+    top: 8vh;
     position: relative;
 }
 .kind_wrap > .kind_slider {
@@ -70,32 +79,34 @@ li {
   .kind_wrap > .kind_slider img {
     vertical-align: top;
     width: 100vw;
-    height: 400px;
+    height: 35vh;
     object-fit: cover;
 }
   .kind_wrap .arrow > a.prev {
     position: absolute; 
-    left:35px; 
-    top:150px;
+    left:40px; 
+    top:13vh;
     font-weight: 900;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 5vh;
     text-decoration: none;
-    color: white;
+    color: #eaeaea;
 }
 .kind_wrap .arrow > a.next {
     position: absolute; 
-    right:35px; 
-    top:150px;
+    right:40px; 
+    top:13vh;
     font-weight: 900;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 5vh;
     text-decoration: none;
-    color: white;
+    color: #eaeaea;
 }
 
 /* 페이지 내용 스타일링 */
 
 .content {
-    margin-top: 100px;  /* 네비게이션 메뉴 바의 높이만큼 여백을 추가하여 겹치지 않게 함 */
+    margin-top: 120px;  /* 네비게이션 메뉴 바의 높이만큼 여백을 추가하여 겹치지 않게 함 */
 }
 
 .home-ad {
