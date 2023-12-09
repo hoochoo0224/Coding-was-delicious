@@ -33,13 +33,22 @@ window.onload = function() {
                 translate -= liWidth;
                 slider.style.transform = `translateX(${translate}px)`;
                 currentIdx += 1;
+            } else if (currentIdx >= slideLis.length -1) {
+                translate += liWidth * (currentIdx);
+                currentIdx = 0;
+                slider.style.transform = `translateX(${translate}px)`;
             }
         } else if (event.target.className === 'prev') {
             if (currentIdx !== 0) {
                 translate += liWidth;
                 slider.style.transform = `translateX(${translate}px)`;
                 currentIdx -= 1;
-            }
+            } 
+            // else if (currentIdx <= 0) {
+            //     translate += liWidth * (currentIdx);
+            //     currentIdx = slideLis.length -1;
+            //     slider.style.transform = `translateX(${translate}px)`;
+            // }
         }
     }
 }

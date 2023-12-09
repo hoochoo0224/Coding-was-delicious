@@ -16,8 +16,8 @@
 }
 
 .nav-menu:hover {
-    background-color: #26262b;
-    box-shadow: 4px 4px 4px 4px #1a1a1a;
+    background-color: #2a2a2f;
+    box-shadow: 4px 4px 4px 4px #1f1f1f;
 }
 
 .nav-menu ul {
@@ -40,10 +40,11 @@
 
 .nav-menu a.active {
     font-weight: 800;
+    color: #cf9aff;
 }
 
 .nav-menu a:hover {
-    color: #ff9900;
+    color: #af7acf;
 }
 
 /* 이미지 슬라이드 */
@@ -75,14 +76,24 @@ li {
 }
 .kind_wrap > .kind_slider .slider li {
     float:left;
+    position: relative;
 }
-  .kind_wrap > .kind_slider img {
+.kind_wrap > .kind_slider img {
     vertical-align: top;
     width: 100vw;
     height: 35vh;
     object-fit: cover;
 }
-  .kind_wrap .arrow > a.prev {
+.kind_wrap > .kind_slider li .img-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* transform: translate( -50%, -50% ); */
+    color: white;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    line-height: 9vh;
+}
+.kind_wrap .arrow > a.prev {
     position: absolute; 
     left:40px; 
     top:13vh;
@@ -110,9 +121,20 @@ li {
 }
 
 .home-ad {
-    border: solid 3px black;
+    border-radius: 20px;
     width: 80vw;
     height: 40vh;
     margin-left: 5vw;
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 15px #5a5a5a;
+}
+.home-ad .num-text {
+    color: #af7acf;
+    padding: 2vh 0 2vh 2vw;
+    font-size: 40px;
+}
+.home-ad p{
+    padding: 0.5vh 0 2vh 1.5vw;
+    font-size: 23px;
+    line-height: 6vh;
 }
